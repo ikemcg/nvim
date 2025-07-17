@@ -1,10 +1,10 @@
 --  For more options, you can see `:help option-list`
 
 local opts = {
-	shiftwidth = 4,
-	tabstop = 4,
-	expandtab = true,
-	wrap = false,
+  shiftwidth = 4,
+  tabstop = 4,
+  expandtab = true,
+  wrap = false,
   backspace = "indent,eol,start",   -- allow backspacing over everything in insert mode
   hlsearch = true,
   mouse = 'a',                -- Enable mouse mode, can be useful for resizing splits for example
