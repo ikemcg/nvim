@@ -1,48 +1,31 @@
 return {
   {
-    'EdenEast/nightfox.nvim',
-    lazy = false,     -- load during startup
-    priority = 1000,  -- load before all other startup plugins
+    "EdenEast/nightfox.nvim",
+    lazy = false, -- load during startup
+    priority = 1000, -- load before all other startup plugins
     config = function()
       vim.cmd("colorscheme dayfox")
-    end
-  },
-  {'tpope/vim-surround'},
-  {'tpope/vim-repeat'},
-  {'godlygeek/tabular'},
-  {
-      'numToStr/Comment.nvim',
-      opts = {
-        toggler = {
-            line = '<leader>cc',
-            block = '<leader>bc',
-        },
-        opleader = {
-            line = '<leader>c',
-            block = '<leader>b',
-        },
-      }
+    end,
   },
   {
-    "mason-org/mason.nvim",
-    opts = {}
+    "folke/todo-comments.nvim",
+    event = "VimEnter",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = { signs = false },
   },
+  { "tpope/vim-repeat" },
+  { "godlygeek/tabular" },
   {
-    "mason-org/mason-lspconfig.nvim",
-    dependencies = {
-      "mason-org/mason.nvim",
-      "neovim/nvim-lspconfig",
-    },
+    "numToStr/Comment.nvim",
     opts = {
-      ensure_installed = {
-        "phpactor",
-        "eslint",
-        "lua_ls",
-        "jsonls",
-        "yamlls",
-        "ts_ls",
-        "marksman",
+      toggler = {
+        line = "<leader>cc",
+        block = "<leader>bc",
       },
-    }
+      opleader = {
+        line = "<leader>c",
+        block = "<leader>b",
+      },
+    },
   },
 }
