@@ -5,7 +5,7 @@ return {
     opts = {
       sections = {
         lualine_c = { { 'filename', path = 1 } },
-        lualine_x = { 'lsp_status', 'encoding', 'fileformat', 'filetype' },
+        lualine_x = { 'lsp_status', 'filetype', 'encoding', 'fileformat' },
       },
       tabline = {
         lualine_a = { 'buffers' },

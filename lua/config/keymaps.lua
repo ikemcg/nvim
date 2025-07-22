@@ -22,3 +22,11 @@ set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+set("n", "<A-j>", "5j", { desc = "Move down 5 lines at a time" })
+
+set('n', '<leader>t', ':botright new | resize 10 | terminal<CR>' )
+
+set('n', '<leader>vt', [[<cmd>vsplit | term<cr>A]], { desc = 'Open terminal in vertical split' })
+set('n', '<leader>ht', [[<cmd>split | term<cr>A]], { desc = 'Open terminal in horizontal split' })
+set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
