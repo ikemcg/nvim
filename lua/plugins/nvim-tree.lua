@@ -5,6 +5,7 @@ return {
     },
     opts = {
       filters = {
+          git_ignored = false,
           dotfiles = true,
       },
     },
