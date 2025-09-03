@@ -13,6 +13,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = { signs = false },
   },
+  { "tpope/vim-fugitive" },
   { "tpope/vim-repeat" },
   { "godlygeek/tabular" },
   {
