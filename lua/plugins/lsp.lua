@@ -215,6 +215,7 @@ return {
         jsonls = {},
         yamlls = {},
         ts_ls = {},
+        vue_ls = {},
         marksman = {},
         -- clangd = {},
         -- gopls = {},

@@ -25,8 +25,10 @@ set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 set("n", "<A-j>", "5j", { desc = "Move down 5 lines at a time" })
 
+-- TERMINAL
 set('n', '<leader>t', ':botright new | resize 10 | terminal<CR>' )
-
 set('n', '<leader>vt', [[<cmd>vsplit | term<cr>A]], { desc = 'Open terminal in vertical split' })
 set('n', '<leader>ht', [[<cmd>split | term<cr>A]], { desc = 'Open terminal in horizontal split' })
 set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+
+set('n', '<leader>d', '<cmd>bn<bar>bd #<cr>', { desc = 'Delete buffer and preserve split' })
