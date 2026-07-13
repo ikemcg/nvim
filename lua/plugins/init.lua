@@ -1,10 +1,21 @@
 return {
+  -- {
+  --   "EdenEast/nightfox.nvim",
+  --   lazy = false, -- load during startup
+  --   priority = 1000, -- load before all other startup plugins
+  --   config = function()
+  --     vim.cmd("colorscheme dayfox")
+  --   end,
+  -- },
   {
-    "EdenEast/nightfox.nvim",
-    lazy = false, -- load during startup
-    priority = 1000, -- load before all other startup plugins
+    "Mofiqul/vscode.nvim",
     config = function()
-      vim.cmd("colorscheme dayfox")
+      -- Enable the light style variants
+      require("vscode").setup({
+        style = "light",
+      })
+      -- Load the colorscheme
+      vim.cmd.colorscheme("vscode")
     end,
   },
   {

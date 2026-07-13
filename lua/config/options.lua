@@ -26,7 +26,6 @@ local opts = {
   smartcase = true,           -- turns off ignore case when pattern contains uppercase letter
   visualbell = true,          -- don't beep
   scrolloff = 10,             -- maintains 3 lines below cursor as cursor moved outside viewport
-  undofile = true,            -- save undo history
   splitright = true,          -- how new split should be created
   splitbelow = true,
   list = true,                -- show <Tab> and <EOL>
