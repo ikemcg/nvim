@@ -6,7 +6,7 @@ return {
     lazy = false, -- Core plugin feature; must load on startup
     config = function()
       -- The configuration API uses 'nvim-treesitter.configs'
-      local configs = require("nvim-treesitter.config")
+      local configs = require("nvim-treesitter.configs")
 
       configs.setup({
         -- A list of parser names to install automatically upon setup
